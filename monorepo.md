@@ -3,6 +3,8 @@
 For the Node environment, we use the monorepo setup, using Node's built-in
 [workspace](https://docs.npmjs.com/cli/v9/using-npm/workspaces?v=true) capability.
 
+A lot of this is inspired by the Turbo [monorepo handbook](https://turbo.build/repo/docs/handbook).
+
 ## The layout
 
 The layout of the repository is as follows:
@@ -57,7 +59,7 @@ npm install @polymath-ai/${dependency} -w ./packages/${package}
 
 where `${dependency}` is the name of the package to be added as a dependency, and `${package}` is the name of the package that will have the dependency added.
 
-All monorepo packages have the following structure:
+All packages within the monorepo have a similar structure:
 
 ```text
 
