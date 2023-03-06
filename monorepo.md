@@ -5,6 +5,10 @@ For the Node environment, we use the monorepo setup, using Node's built-in
 
 A lot of this is inspired by the Turbo [monorepo handbook](https://turbo.build/repo/docs/handbook).
 
+## Name of the repository
+
+The name of the repository is `polymath-ai`. It mirrors the name of the organization, and also the name of the `npm` scope.
+
 ## The layout
 
 The layout of the repository is as follows:
