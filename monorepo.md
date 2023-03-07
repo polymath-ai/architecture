@@ -74,7 +74,8 @@ All packages within the monorepo have a similar structure:
 ├── package.json
 ├── src
 │   ├── index.js
-│   ├── index.test.js
+│   ├── tests
+│   │   ├── <file>.js
 │   ├── <dir>
 │   │   ├── <file>.js
 
@@ -84,7 +85,7 @@ We try to place most of the code into sub-directories of the `src` directory, or
 
 ## Testing
 
-We use [ava](https://github.com/avajs/ava) for testing and place test files next to the source files they test, with the `.test.js` extension.
+We use [ava](https://github.com/avajs/ava) for testing and place test files into a separate `test` directory, with the same file name name as what they test. 
 
 ## Publishing packages
 
