@@ -9,6 +9,10 @@ A lot of this is inspired by the Turbo [monorepo handbook](https://turbo.build/r
 
 The name of the repository is `polymath-ai`. It mirrors the name of the organization, and also the name of the `npm` scope.
 
+The original [Polymath repo](https://github.com/dglazkov/polymath) moves to the `polymath-python` repository in this organization.
+
+It might have been cool to name the respective Node repo `polymath-node`, but that messes with the convention many Node projects use for monorepos.
+
 ## The layout
 
 The layout of the repository is as follows:
