@@ -73,19 +73,22 @@ All packages within the monorepo have a similar structure:
 
 ├── package.json
 ├── src
-│   ├── index.js
-│   ├── tests
-│   │   ├── <file>.js
-│   ├── <dir>
-│   │   ├── <file>.js
-
+│   └── index.js
+├────── <dir>
+│        ├── <file>.js
+│
+│        ...
+├── tests
+│   └── <file>.js
+│
+│   ...
 ```
 
 We try to place most of the code into sub-directories of the `src` directory, organizing them according to their purpose.
 
 ## Testing
 
-We use [ava](https://github.com/avajs/ava) for testing and place test files into a separate `tests` directory, with the same file name name as what they test. 
+We use [ava](https://github.com/avajs/ava) for testing and place test files into a separate `tests` directory, with the same file name name as what they test.
 
 ## Publishing packages
 
@@ -96,3 +99,7 @@ To publish packages, we use [changesets](https://github.com/changesets/changeset
 2. Run `changeset version` to bump the version numbers of the packages that have changed. This will update the `package.json` files of the packages that have changed, and will create a new commit with the changes.
 
 3. Run `changeset publish` to publish the packages that have changed. This will create a new tag for the new version, and will publish the packages to the npm registry.
+
+```
+
+```
